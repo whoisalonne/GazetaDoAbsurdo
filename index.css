@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background: #21D2D2;
+    padding: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 20px 0 20px;
+}
+
+.secao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    width: 12%;
+    height: 140px;
+    border-radius: 10px;
+    background: yellow;
+}
+
+#amarelo {
+    background: #ffff8d;
+}
+
+#vermelho {
+    background: #f39d9d;
+}
+
+#violeta {
+    background: #dcc2fc;
+}
+
+#laranja {
+    background: #fce49d;
+}
+
+#verde {
+    background: #baf8e2;
+}
+
+#azul {
+    background: #c5f2fd;
+}
+
+#limegreen {
+    background: #b6fcd1
+}
+
+#preto {
+    background: #b9c0d6;
+}
+
+.titulo-secao {
+    margin-top: 10px;
+}
+
+img {
+    width: 64px;
+    height: 64px;
+}
