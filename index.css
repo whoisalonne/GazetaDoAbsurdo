@@ -3,13 +3,44 @@ body {
     padding: 0;
 }
 
+@font-face {
+    font-family: franchise;
+    src: url('fontes/Franchise-Free-Bold.otf');
+}
+
+@font-face {
+    font-family: roboto;
+    src: url('fontes/NeueMontreal.ttf');
+}
+
 header {
     text-align: center;
     background: #21D2D2;
     padding: 30px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    height: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#div-titulo {
+    font-family: roboto;
+    border: 1px solid;
+    padding: 0 20px 0 20px;
+    overflow: hidden;
+}
+
+#titulo {
+    font-size: 210px;
+    font-family: franchise;
+    line-height: 0.4;
+}
+
+#subtitulo {animation: move linear 10s infinite;}
+
+
 
 #sections {
     display: flex;
@@ -69,4 +100,14 @@ header {
 img {
     width: 64px;
     height: 64px;
+}
+
+@keyframes move {
+    0% {
+        transform:translateX(100%);
+    }
+
+    100% {
+        transform:translateX(-100%);
+    }
 }
