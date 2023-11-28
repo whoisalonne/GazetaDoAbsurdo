@@ -13,6 +13,26 @@ body {
     src: url('fontes/NeueMontreal.ttf');
 }
 
+@font-face {
+    font-family: neue;
+    src: url('fontes/NeueMontreal-Regular.otf');
+}
+
+@font-face {
+    font-family: nexa;
+    src: url('fontes/Nexa-Heavy.ttf');
+}
+
+@font-face {
+    font-family: tanker;
+    src: url('fontes/Tanker-Regular.otf');
+}
+
+@font-face {
+    font-family: satoshi;
+    src: url('fontes/Satoshi-Regular.otf');
+}
+
 header {
     text-align: center;
     background: #21D2D2;
@@ -40,13 +60,74 @@ header {
 
 #suptitulo {
     font-size: 10px;
+    font-family: neue;
 }
 
 #subtitulo {
     animation: move linear 10s infinite;
 }
 
+#p {
+    font-family: nexa;
+}
 
+#fast-notices {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#titulo-fast {
+    font-family: roboto;
+    font-weight: bold;
+}
+
+#paragrafo-fast {
+    font-family: satoshi;
+}
+
+#fotos {
+    z-index: 5;
+    margin-right: 40%;
+    width: 500px;
+    transition: ease 1s;
+    border: 12px double;
+}
+
+#buttons {
+    border: 1px solid;
+    margin-left: 40%;
+    position: absolute;
+    width: 250px;
+    height: 80px;
+    display: flex;
+    box-shadow: 5px 5px;
+}
+
+button {width: 50%;
+height: 100%;
+font-weight: bold;}
+
+#clara {
+    display: block;
+    width: 100%;
+    height: 450px;
+    z-index: 5;
+    transition: ease 1s;
+}
+
+#clara2 {
+    display: none;
+}
+
+
+#a {
+    margin-right: 40%;
+    position: absolute;
+    z-index: -1;
+}
 
 #sections {
     display: flex;

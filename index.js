@@ -1,22 +1,29 @@
 
 
-let ano = new Date().getFullYear()
+let ano = new Date().getFullYear();
 let mes = new Date().getMonth();
-let dia = new Date().getDate()
+let dia = new Date().getDate();
 
 let anoA = document.getElementById('anoA');
 let mesA = document.getElementById('mesA');
 let diaA = document.getElementById('diaA');
 const sub = document.getElementById('subtitulo');
-let ArraySubs = ['- Hoje é o dia 1 -', '- um dois, feijão com arroz -', '- Ok, está funcionando (^◡^ ) -']
+const ArraySubs = ['- Hoje é o dia 3 -', '- um dois, feijão com arroz -', '- Ok, está funcionando (^◡^ ) -'];
 let contador = 0;
+
+const fotos = document.getElementById('fotos')
 
 setInterval(() => {
     sub.innerText = ArraySubs[contador];
     contador++;
-    if (contador <= 2) { contador = 0 };
+    if (contador === 3) { contador = 0 };
 }, 10000)
 
+fotos.addEventListener('click', () => { if(fotos.style.transform === 'translateX(110%)') {
+    fotos.style.transform = 'translateX(0%)';
+} else {
+    fotos.style.transform = 'translateX(110%)';
+}})
 
 anoA.innerText = ano;
 diaA.innerText = dia;
@@ -59,3 +66,4 @@ switch (mes) {
         mesA.innerText = "Dez";
         break;
 }
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Música</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        section {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            color: white;
+        }
+
+        #section1 {
+            background-color: #3498db;
+        }
+
+        #section2 {
+            background-color: #2ecc71;
+            display: none;
+        }
+
+        #section3 {
+            background-color: #e74c3c;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<audio id="myAudio" loop>
+    <source src="music/teste.mpeg" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+</audio>
+
+<section id="section1">Seção 1</section>
+<section id="section2">Seção 2</section>
+<section id="section3">Seção 3</section>
+
+<script>
+    const audio = document.getElementById('myAudio');
+    const section1 = document.getElementById('section1');
+    const section2 = document.getElementById('section2');
+    const section3 = document.getElementById('section3');
+
+    section2.addEventListener('mouseenter', () => {
+        audio.play();
+    });
+
+    section2.addEventListener('mouseleave', () => {
+        audio.pause();
+        audio.currentTime = 0;
+    });
+
+    section1.addEventListener('click', () => {
+        section1.style.display = 'none';
+        section2.style.display = 'flex';
+    });
+
+    section2.addEventListener('click', () => {
+        section2.style.display = 'none';
+        section3.style.display = 'flex';
+    });
+
+    section3.addEventListener('click', () => {
+        section3.style.display = 'none';
+        section1.style.display = 'flex';
+    });
+</script>
+
+</body>
+</html>
