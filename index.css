@@ -69,14 +69,15 @@ header {
 
 #p {
     font-family: nexa;
+    border-top: 70px;
 }
 
 #fast-notices {
     margin-top: 80px;
+    margin-bottom: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 #titulo-fast {
@@ -106,9 +107,11 @@ header {
     box-shadow: 5px 5px;
 }
 
-button {width: 50%;
-height: 100%;
-font-weight: bold;}
+button {
+    width: 50%;
+    height: 100%;
+    font-weight: bold;
+}
 
 #clara {
     display: block;
