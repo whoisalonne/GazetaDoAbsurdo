@@ -115,7 +115,9 @@ header {
     font-size: 40px;
 }
 
-#bordaroxa2 {border-bottom: 5px solid #8468f3}
+#bordaroxa2 {
+    border-bottom: 5px solid #8468f3
+}
 
 .bordaroxa {
     border-bottom: 10px solid #8468f3
@@ -191,7 +193,8 @@ header {
     box-shadow: 5px 5px;
 }
 
-button {
+#prox,
+#ant {
     width: 50%;
     height: 100%;
     font-weight: bold;
@@ -231,23 +234,60 @@ button {
     margin-right: 10%;
 }
 
+#bemPreto {
+    background: black;
+    color: whitesmoke
+}
+
 #titulo-planos,
 #sub-planos {
     text-align: center;
 }
 
-#titulo-planos
-{
-font-size: 70px;
-margin-top: 8%;
+#titulo-planos {
+    font-size: 70px;
+    margin-top: 8%;
+}
+
+#sub-planos {
+    margin-bottom: 5%;
+}
+
+.botao-planos {
+    padding: 20px 50px 20px 50px;
+    display: block;
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background: black;
+    color: whitesmoke;
+    border: 1px solid;
+    box-shadow: 5px 5px;
+    font-family: satoshi;
+}
+
+#bt-p2 {
+    background: #785bec;
+    box-shadow: 5px 5px black;
+    color: black;
 }
 
 .pretoDiv {
     border: 1px solid;
     padding-right: 2%;
+    box-shadow: 15px 15px black;
 }
 
-.pretoDiv h1 {text-align: center;}
+.pretoDiv h1 {
+    text-align: center;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-right: 1px solid;
+}
+
+#bemRoxo {
+    background: #785bec;
+}
 
 .primeiro {
     border: 1px solid;
@@ -337,9 +377,9 @@ img {
 ::-webkit-scrollbar {
     width: 5px;
     background: black;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background:  #6746E9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6746E9;
     border-radius: 12px;
-  }
+}
