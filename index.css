@@ -115,7 +115,9 @@ header {
     font-size: 40px;
 }
 
-#bordaroxa {
+#bordaroxa2 {border-bottom: 5px solid #8468f3}
+
+.bordaroxa {
     border-bottom: 10px solid #8468f3
 }
 
@@ -193,7 +195,6 @@ button {
     width: 50%;
     height: 100%;
     font-weight: bold;
-    border
 }
 
 #clara {
@@ -220,6 +221,7 @@ button {
 #planos {
     font-family: roboto;
     border: 1px solid;
+    border-color: #efeff1;
 }
 
 #planoscores {
@@ -234,7 +236,7 @@ button {
     text-align: center;
 }
 
-#titulo-planos,
+#titulo-planos
 {
 font-size: 70px;
 margin-top: 8%;
@@ -242,7 +244,10 @@ margin-top: 8%;
 
 .pretoDiv {
     border: 1px solid;
+    padding-right: 2%;
 }
+
+.pretoDiv h1 {text-align: center;}
 
 .primeiro {
     border: 1px solid;
@@ -328,3 +333,13 @@ img {
         transform: translateX(-100%);
     }
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background:  #6746E9;
+    border-radius: 12px;
+  }
