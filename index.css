@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    background: #f9fcfcbd;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -35,7 +37,6 @@ body {
 
 header {
     text-align: center;
-    background: #f9fcfcbd;
     padding: 30px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -73,45 +74,79 @@ header {
 
 #site {
     border: 1px solid;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
     overflow: hidden;
     width: 80%;
-    padding: 20px;
+    padding: 10px 20px 10px 20px;
     background: black;
-    transition: 0.5s ease;
-    filter: blur(5px);
-}
-
-#site:hover {
-    filter: blur(0px)
-}
-
-#site::after {
-    content: "EU estou aqui";
-    color: yellow;
 }
 
 #mySite {
     display: block;
-    width: 100%;
+    width: 98%;
     height: 480px;
     margin-left: 20px;
     margin-top: 20px;
+    transition: 0.5s ease;
+}
+
+#info {
+    display: block;
+    padding: 0 4% 2% 4%;
+    font-family: satoshi;
+    border: 1px solid;
+    margin: 0 8.35% 0 8.35%;
 }
 
 #popular {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin: 0 20px 0 20px;
+}
+
+#titulo-popular {
+    text-decoration: underline;
+    font-family: franchise;
+    font-size: 40px;
+}
+
+#bordaroxa {
+    border-bottom: 10px solid #8468f3
+}
+
+.autor {
+    color: #666974;
+    font-family: satoshi;
+}
+
+.color {
+    background: #6746E9
+}
+
+.borda {
+    border-left: 5px solid
+}
+
+#para-popular {
+    padding-left: 5px;
+}
+
+#create {
+    color: yellow;
+    font-family: roboto;
+    font-size: 30px;
 }
 
 #p {
-    font-family: nexa;
-    margin-top: 70px;
+    font-size: 70px;
+    font-family: roboto;
+    margin-top: 8%;
+    text-align: center;
 }
 
 #fast-notices {
@@ -123,16 +158,20 @@ header {
 }
 
 #titulo-fast {
+    margin-left: 20%;
     font-family: roboto;
     font-weight: bold;
 }
 
 #paragrafo-fast {
+    margin-left: 20%;
+    margin-right: 20%;
     font-family: satoshi;
 }
 
 #fotos {
     z-index: 5;
+    margin-top: 3%;
     margin-right: 40%;
     width: 500px;
     transition: ease 1s;
@@ -142,6 +181,7 @@ header {
 #buttons {
     border: 1px solid;
     margin-left: 40%;
+    margin-top: 5%;
     position: absolute;
     width: 250px;
     height: 80px;
@@ -153,6 +193,7 @@ button {
     width: 50%;
     height: 100%;
     font-weight: bold;
+    border
 }
 
 #clara {
@@ -174,6 +215,33 @@ button {
     justify-content: flex-start;
     align-items: center;
     height: 400px;
+}
+
+#planos {
+    font-family: roboto;
+    border: 1px solid;
+}
+
+#planoscores {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#titulo-planos,
+#sub-planos {
+    text-align: center;
+}
+
+#titulo-planos,
+{
+font-size: 70px;
+margin-top: 8%;
+}
+
+.pretoDiv {
+    border: 1px solid;
 }
 
 .primeiro {

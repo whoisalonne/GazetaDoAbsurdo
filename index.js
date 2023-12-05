@@ -8,7 +8,7 @@ let anoA = document.getElementById('anoA');
 let mesA = document.getElementById('mesA');
 let diaA = document.getElementById('diaA');
 const sub = document.getElementById('subtitulo');
-const ArraySubs = ['- Hoje é o dia 3 -', '- um dois, feijão com arroz -', '- Ok, está funcionando (^◡^ ) -'];
+const ArraySubs = ['- Hoje é o dia 6 -', '- um dois, feijão com arroz -', '- Ok, está funcionando (^◡^ ) -'];
 let contador = 0;
 
 const fotos = document.getElementById('fotos');
@@ -23,8 +23,8 @@ const fastArrayShort = [
   { titulo: "Alonne, Voce não precisa se sentir só", imagem: 'fotos/alonne.jpeg' }
 ];
 
-const fastArrayLong = [{paragrafo: 'Clara, é uma garota que costuma sair a tarde para que o sol\n de 40 graus não machuque sua pele.'},
-{paragrafo: 'Fiz o que queria fazer, mas nao disse o que queria dizer.\n No fim, vc só me viu como um estorvo.'}]
+const fastArrayLong = [{paragrafo: 'Jovem estudante do interior do Ceará alega sofrer com temperaturas acima dos 33 graus, visando evitar o calor intenso da sua cidade, busca sair somente à tarde para proteger sua pele. Quando nossa equipe entrou em contato para uma entrevista sobre como ela consegue frequentar suas aulas no turno matutino obtivemos a breve resposta "Eu pego o onibús, né?"'},
+{paragrafo: 'Fiz o que queria fazer, mas nao disse o que queria dizer. No fim, vc só me viu como um estorvo.'}]
 
 btProx.addEventListener('click', () => {
   tituloFast.innerText = fastArrayShort[contFast].titulo;
