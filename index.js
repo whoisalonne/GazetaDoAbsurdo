@@ -11,20 +11,20 @@ const sub = document.getElementById('subtitulo');
 const ArraySubs = ['- Hoje é o dia 6 -', '- um dois, feijão com arroz -', '- Ok, está funcionando (^◡^ ) -'];
 let contador = 0;
 
-const fotos = document.getElementById('fotos');
-let idFoto = document.getElementById('clara')
-const tituloFast = document.getElementById('titulo-fast');
-const paragrafoFast = document.getElementById('paragrafo-fast');
+const fotos = document.getElementById('fotos-fast');
+let idFoto = document.getElementById('clara');
+const tituloFast = document.getElementById('t-fast');
+const paragrafoFast = document.getElementById('p-fast');
 const btProx = document.getElementById('prox'); 
 const btAnt = document.getElementById('ant');
 let contFast = 1; 
 const fastArrayShort = [
   { titulo: 'Clara, A Garota do Sol Poente', imagem: 'fotos/clara.png' },
-  { titulo: "Alonne, Voce não precisa se sentir só", imagem: 'fotos/alonne.jpeg' }
+  { titulo: "Alonne, O Progamador", imagem: 'fotos/alonne.jpeg' }
 ];
 
 const fastArrayLong = [{paragrafo: 'Jovem estudante do interior do Ceará alega sofrer com temperaturas acima dos 33 graus, visando evitar o calor intenso da sua cidade, busca sair somente à tarde para proteger sua pele. Quando nossa equipe entrou em contato para uma entrevista sobre como ela consegue frequentar suas aulas no turno matutino obtivemos a breve resposta "Eu pego o onibús, né?"'},
-{paragrafo: 'Fiz o que queria fazer, mas nao disse o que queria dizer. No fim, vc só me viu como um estorvo.'}]
+{paragrafo: 'Um jovem programador, criador, designer e idealizador desse jornal.'}]
 
 btProx.addEventListener('click', () => {
   tituloFast.innerText = fastArrayShort[contFast].titulo;
