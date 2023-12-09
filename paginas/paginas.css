@@ -118,6 +118,10 @@ main {
     font-family: roboto;
 }
 
+.autor {
+    color: #666974;
+    font-family: satoshi;
+}
 footer {
     margin-top: 3%;
     color: whitesmoke;

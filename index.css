@@ -342,27 +342,24 @@ header {
 }
 
 .divs {
-    background: yellow;
+    background: whitesmoke;
     width: 28%;
-    height: 400px;
     border: 1px solid;
     margin: 15px;
 }
 
 .img-tec {
     border: 1px solid;
-    border-radius: 10px;
     margin: 20px 20px 0 20px;
     height: 200px;
 }
 
-.txt-tec {
-    border: 1px solid;
-    margin: 0 20px 20px 20px;
-}
+.fotos-tec {width: 100%;
+height: 100%;}
 
-#branco-tec {
-    background: whitesmoke;
+.txt-tec {
+    font-family: satoshi;
+    margin: 0 10px 10px 10px;
 }
 
 #conteinerONE {
@@ -375,7 +372,7 @@ header {
 }
 
 #conteinerTWO {
-    height: 900px;
+    height: 1100px;
     border: 1px solid;
     background: rgb(221, 216, 245);
     border-radius: 5px;
@@ -388,27 +385,34 @@ header {
 
 .cien-divs {
     border: 1px solid;
+    background: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 400px;
+    height: 500px;
     width: 40%;
 }
 
 .img-cien {
     width: 85%;
     height: 300px;
-    margin: 20px;
+    margin: 20px 20px 0 20px;
     border: 1px solid;
 }
 
 .txt-cien {
     width: 85%;
-    height: 200px;
-    margin: 20px;
-    border: 1px solid;
+    font-family: satoshi;
 }
 
+.titulo {
+    font-family: roboto;
+}
+
+.fotos-cien {
+    width: 100%;
+    height: 100%;
+}
 
 #conteinerTHREE {
     display: flex;
