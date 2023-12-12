@@ -67,16 +67,17 @@ main {
     display: block;
 }
 
+.img {margin-right: 2%;}
+
 .txt {
     font-family: satoshi;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 50%;
+   
+    width: 52%;
     margin-bottom: 2%;
 }
 
 #menor {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -87,9 +88,12 @@ main {
     font-family: roboto;
 }
 
+#txt2 {margin: 0 3% 0 3%;}
+
 #imgxp {
     margin-left: 20px;
     padding-right: 0;
+    width: 100%;
 }
 
 #img-foto {
