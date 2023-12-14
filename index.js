@@ -8,7 +8,7 @@ let anoA = document.getElementById('anoA');
 let mesA = document.getElementById('mesA');
 let diaA = document.getElementById('diaA');
 const sub = document.getElementById('subtitulo');
-const ArraySubs = ['- O contéudo deste site não é verídico e não deve ser levado a sério de forma alguma -', '- Gazeta do Povo? Nunca ouvi falar -', '- Comentários em breve (^◡^ ) -'];
+const ArraySubs = ['- O contéudo deste site não é verídico e não deve ser levado a sério de forma alguma -', '- Gazeta do Povo? Nunca ouvi falar -', '- Comentários em breve (^◡^ ) -', 'Versão mobile ainda não disponivel'];
 let contador = 0;
 
 const fotos = document.getElementById('fotos-fast');
@@ -50,10 +50,10 @@ setInterval(() => {
 }, 10000)
 
 fotos.addEventListener('click', () => {
-    if (fotos.style.transform === 'translateX(110%)') {
+    if (fotos.style.transform === 'translateX(120%)') {
         fotos.style.transform = 'translateX(0%)';
     } else {
-        fotos.style.transform = 'translateX(110%)';
+        fotos.style.transform = 'translateX(120%)';
     }
 })
 
