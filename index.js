@@ -46,7 +46,7 @@ btAnt.addEventListener('click', () => {
 setInterval(() => {
     sub.innerText = ArraySubs[contador];
     contador++;
-    if (contador === 3) { contador = 0 };
+    if (contador === 4) { contador = 0 };
 }, 10000)
 
 fotos.addEventListener('click', () => {
