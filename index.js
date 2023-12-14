@@ -8,32 +8,30 @@ let anoA = document.getElementById('anoA');
 let mesA = document.getElementById('mesA');
 let diaA = document.getElementById('diaA');
 const sub = document.getElementById('subtitulo');
-const ArraySubs = ['- Hoje é o dia 6 -', '- um dois, feijão com arroz -', '- Ok, está funcionando (^◡^ ) -'];
+const ArraySubs = ['- O contéudo deste site não é verídico e não deve ser levado a sério de forma alguma -', '- Gazeta do Povo? Nunca ouvi falar -', '- Comentários em breve (^◡^ ) -'];
 let contador = 0;
 
 const fotos = document.getElementById('fotos-fast');
 let idFoto = document.getElementById('clara');
 const tituloFast = document.getElementById('t-fast');
 const paragrafoFast = document.getElementById('p-fast');
-const btProx = document.getElementById('prox'); 
+const btProx = document.getElementById('prox');
 const btAnt = document.getElementById('ant');
-let contFast = 1; 
+let contFast = 1;
 const fastArrayShort = [
-  { titulo: 'Clara, A Garota do Sol Poente', imagem: 'fotos/clara.png' },
-  { titulo: "Alonne, O Progamador", imagem: 'fotos/alonne.jpeg' }
+    { titulo: 'Clara, A Garota do Sol Poente', imagem: 'fotos/clara.png' }
 ];
 
-const fastArrayLong = [{paragrafo: 'Jovem estudante do interior do Ceará alega sofrer com temperaturas acima dos 33 graus, visando evitar o calor intenso da sua cidade, busca sair somente à tarde para proteger sua pele. Quando nossa equipe entrou em contato para uma entrevista sobre como ela consegue frequentar suas aulas no turno matutino obtivemos a breve resposta "Eu pego o onibús, né?"'},
-{paragrafo: 'Um jovem programador, criador, designer e idealizador desse jornal.'}]
+const fastArrayLong = [{ paragrafo: 'Jovem estudante do interior do Ceará alega sofrer com temperaturas acima dos 33 graus, visando evitar o calor intenso da sua cidade, busca sair somente à tarde para proteger sua pele. Quando nossa equipe entrou em contato para uma entrevista sobre como ela consegue frequentar suas aulas no turno matutino obtivemos a breve resposta "Eu pego o onibús, né?"' }]
 
 btProx.addEventListener('click', () => {
-  tituloFast.innerText = fastArrayShort[contFast].titulo;
-  fotos.querySelector('img').src = fastArrayShort[contFast].imagem;
-  paragrafoFast.innerText = fastArrayLong[contFast].paragrafo;
-  contFast++;
-  if (contFast >= fastArrayShort.length) {
-    contFast = 0; 
-  }
+    tituloFast.innerText = fastArrayShort[contFast].titulo;
+    fotos.querySelector('img').src = fastArrayShort[contFast].imagem;
+    paragrafoFast.innerText = fastArrayLong[contFast].paragrafo;
+    contFast++;
+    if (contFast >= fastArrayShort.length) {
+        contFast = 0;
+    }
 });
 
 btAnt.addEventListener('click', () => {
@@ -42,7 +40,7 @@ btAnt.addEventListener('click', () => {
     paragrafoFast.innerText = fastArrayLong[contFast].paragrafo;
     contFast--;
     if (contFast < 0) {
-      contFast = (fastArrayShort.length - 1); 
+        contFast = (fastArrayShort.length - 1);
     }
 })
 setInterval(() => {
@@ -51,11 +49,13 @@ setInterval(() => {
     if (contador === 3) { contador = 0 };
 }, 10000)
 
-fotos.addEventListener('click', () => { if(fotos.style.transform === 'translateX(110%)') {
-    fotos.style.transform = 'translateX(0%)';
-} else {
-    fotos.style.transform = 'translateX(110%)';
-}})
+fotos.addEventListener('click', () => {
+    if (fotos.style.transform === 'translateX(110%)') {
+        fotos.style.transform = 'translateX(0%)';
+    } else {
+        fotos.style.transform = 'translateX(110%)';
+    }
+})
 
 anoA.innerText = ano;
 diaA.innerText = dia;

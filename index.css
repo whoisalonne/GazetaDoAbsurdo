@@ -1,8 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     background: #f9fcfcbd;
-    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -380,7 +383,7 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items:center;
+    align-items: center;
 }
 
 .cien-divs {
@@ -389,7 +392,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 500px;
+
     width: 40%;
 }
 
@@ -424,7 +427,7 @@ header {
 
 #esquerda-nat {
     width: 26%;
-    height: 530px;
+
     border: 1px solid;
     display: flex;
     flex-direction: column;
@@ -451,7 +454,6 @@ header {
 
 #central-nat {
     width: 36%;
-    height: 530px;
     border: 1px solid;
     display: flex;
     flex-direction: column;
@@ -474,7 +476,6 @@ header {
 
 #direita-nat {
     width: 26%;
-    height: 530px;
     border: 1px solid;
     display: flex;
     flex-direction: column;
@@ -490,8 +491,75 @@ header {
     height: 250px;
 }
 
-#dir-txt { width: 90%;
-    font-family: satoshi;}
+#dir-txt {
+    width: 90%;
+    font-family: satoshi;
+}
+
+.aviso {
+    font-size: 20px;
+    font-family: satoshi;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    margin-top: 3%;
+    color: whitesmoke;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: franchise;
+    padding-bottom: 3%;
+}
+
+#t-head {
+    font-size: 55px;
+}
+
+.fim {
+    font-family: roboto;
+}
+
+.cor {
+    color: #8466fc
+}
+
+#rodapeOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: franchise;
+}
+
+#rodapeTWO ul {
+    margin-top: 50%;
+    list-style: none;
+}
+
+.li-fim {
+    margin-bottom: 10px;
+}
+
+
+.li-fim:hover {
+    color: #8468f3;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+#rodapeTWO {
+    font-family: roboto;
+    font-size: 20px;
+}
 
 @keyframes move {
     0% {
