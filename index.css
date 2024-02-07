@@ -34,17 +34,53 @@ body {
 }
 
 header {
-    text-align: center;
-    padding: 30px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    height: 460px;
+    justify-content: space-evenly;
+    border: 1px solid;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 5;
+}
+
+/* Elementos flexíveis */
+
+header,
+#headerLis,
+#popular,
+#site,
+.secao,
+#div-planos,
+.botao-planos,
+#conteinerONE,
+#conteinerTWO,
+.child-divs,
+#conteinerTHREE,
+footer,
+#rodapeOne,
+#conter, #CTWOCARDS, #CTWOANUNCIO, .teste {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+}
+
+#spanGA {
+    background-color: #785bec;
+    font-family: franchise;
+    font-size: 70px;
+    padding: 0 8px 0 8px;
+    border: 1px solid;
+}
+
+#headerLis {
+    list-style-type: none;
+}
+
+#headerLis li {
+    margin-right: 15px;
+    font-family: roboto;
 }
 
 #div-titulo {
+    text-align: center;
     font-family: roboto;
     padding: 0 20px 0 20px;
     overflow: hidden;
@@ -66,45 +102,54 @@ header {
 }
 
 #subtitulo {
-    animation: move linear 10s infinite;
+    animation: move linear 12s infinite;
     font: 30px neue bold;
+    margin-bottom: 4%;
 }
 
-#principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 20px 0 20px;
+#conter {
+    width: 80%;
+    height: auto;
+}
+
+#popular {
+    justify-content: center;
 }
 
 #site {
+    width: 40vw;
     border: 1px solid;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    overflow: hidden;
-    width: 80%;
-   
-}
-
-#mySite {
-    display: block;
-    width: 100%;
-    height: 100%;
-   
-   
-    transition: 0.5s ease;
+    height: 70vh;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3), transparent), url('fotos/iltp5.jpeg');
+    background-position: center;
+    background-size: cover;
 }
 
 #info {
-    display: block;
-    padding: 0 4% 2% 4%;
-    font-family: satoshi;
+    background: black;
+    width: 40vw;
+    height: 70vh;
     border: 1px solid;
-   width: 72%;
-   margin-bottom: 4%;
+    color: whitesmoke;
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.inforight {
+    margin-right: 15px;
+    margin-left: 5px;
+    font-family: roboto;
+}
+
+#info-t {
+    font-size: 35px;
+}
+
+#info-txt {
+    font-family: satoshi;
 }
 
 .autor {
@@ -112,7 +157,7 @@ header {
     font-family: satoshi;
 }
 
-#t-principal {
+#t-popular {
     text-decoration: underline;
     font-family: franchise;
     font-size: 40px;
@@ -138,10 +183,8 @@ header {
 }
 
 .secao {
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     border: 1px solid;
     width: 12%;
     height: 140px;
@@ -152,44 +195,6 @@ header {
 .t-secao {
     margin-top: 10px;
 }
-
-#amarelo {
-    background: #ffff8d;
-}
-
-#vermelho {
-    background: #f39d9d;
-}
-
-#violeta {
-    background: #dcc2fc;
-}
-
-#laranja {
-    background: #fce49d;
-}
-
-#verde {
-    background: #baf8e2;
-}
-
-#azul {
-    background: #c5f2fd;
-}
-
-#limegreen {
-    background: #b6fcd1
-}
-
-#preto {
-    background: #b9c0d6;
-}
-
-.icon {
-    width: 64px;
-    height: 64px;
-}
-
 #t-new {
     font-size: 70px;
     font-family: roboto;
@@ -201,67 +206,6 @@ header {
     border-bottom: 10px solid #8468f3
 }
 
-#fast-notices {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#div-fast {
-    margin-right: 40%;
-    position: absolute;
-}
-
-#t-fast {
-    margin-left: 20%;
-    font-family: roboto;
-    font-weight: bold;
-}
-
-#p-fast {
-    margin-left: 20%;
-    margin-right: 20%;
-    font-family: satoshi;
-}
-
-#fotos-fast {
-    z-index: 5;
-    position: relative;
-    margin-top: 3%;
-    margin-right: 40%;
-    width: 500px;
-    transition: ease 1s;
-    border: 1px solid;
-}
-
-#clara {
-    display: block;
-    width: 100%;
-    height: 450px;
-    z-index: 5;
-    transition: ease 1s;
-
-}
-
-#buttons-fast {
-    border: 1px solid;
-    margin-left: 40%;
-    margin-top: 5%;
-    position: absolute;
-    width: 250px;
-    height: 80px;
-    display: flex;
-    box-shadow: 5px 5px;
-}
-
-#prox,
-#ant {
-    width: 50%;
-    height: 100%;
-    font-weight: bold;
-}
 
 #planos {
     font-family: roboto;
@@ -288,7 +232,6 @@ header {
 }
 
 #div-planos {
-    display: flex;
     justify-content: space-around;
     margin-left: 10%;
     margin-right: 10%;
@@ -315,7 +258,6 @@ header {
 
 .botao-planos {
     padding: 20px 50px 20px 50px;
-    display: block;
     margin-left: 30%;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -344,25 +286,80 @@ header {
     font-family: roboto;
 }
 
-.divs {
+.divs,
+.cien-divs,
+.nat-divs {
     background: whitesmoke;
-    width: 28%;
+    width: 28vw;
     border: 1px solid;
     margin: 15px;
+    height: 64vh;
 }
 
-.img-tec {
-    border: 1px solid;
-    margin: 20px 20px 0 20px;
-    height: 200px;
+.imgrow {
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 40vh;
 }
 
-.fotos-tec {
-    width: 100%;
-    height: 100%;
+#backimg01 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/header.png');
 }
 
-.txt-tec {
+#backimg02 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/codigo.jpg');
+}
+
+#backimg03 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/escovando.jpg');
+}
+
+#backimg04 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/HARU.jpeg');
+}
+
+#backimg05 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/copiadosgatos.jpeg');
+}
+
+#backimg06 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/dolar.jpg');
+}
+
+#backimg07 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/palhaco.jpg');
+}
+
+#backimg08 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/celveg.jpeg');
+}
+
+#backimg09 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/cogumelo.jpg');
+}
+
+#backimg10 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/diplpoda.jpeg');
+}
+
+.titulo {
+    margin-left: 3%;
+    margin-bottom: 2%;
+    font-family: roboto;
+    font-size: 30px;
+    color: white;
+}
+
+.texto {
+    font-weight: 600;
+}
+
+.txt-tec,
+.txt-cien,
+.txt-nat {
     font-family: satoshi;
     margin: 0 10px 10px 10px;
 }
@@ -370,30 +367,48 @@ header {
 #conteinerONE {
     background: rgb(221, 216, 245);
     border-radius: 5px;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    height: 500px;
+    height: 75vh;
+    margin: 0 2% 0 2%;
 }
 
-#conteinerTWO {
-    height: 1100px;
+#CTWOCARDS {
+    height: 140vh;
+    width: 65vw;
     background: rgb(221, 216, 245);
-    border-radius: 5px;
-    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center;
+    margin: 0 1% 0 1%;
+    border-radius: 5px;
 }
 
-.cien-divs {
-    border: 1px solid;
-    background: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.teste {
+    height: 18vh;
+    width: 28vw;
+    font-family: roboto;
+    
+}
 
-    width: 40%;
+#outros {
+    height: 7vh;
+    justify-content: center;
+    border: none;
+}
+
+.teste h1 {
+    margin: 0 2% 0 2%;
+}
+
+.teste a:hover {
+    color:  rgb(119, 93, 248);
+}
+
+#CTWOANUNCIO {
+    height: 125vh;
+    
+    width: 31vw;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .img-cien {
@@ -408,92 +423,17 @@ header {
     font-family: satoshi;
 }
 
-.titulo {
-    font-family: roboto;
-}
-
 .fotos-cien {
     width: 100%;
     height: 100%;
 }
 
 #conteinerTHREE {
-    display: flex;
     background: rgb(221, 216, 245);
     justify-content: space-around;
-    align-items: center;
-    height: 600px;
-}
-
-#esquerda-nat {
-    width: 26%;
-
-    border: 1px solid;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: whitesmoke;
-}
-
-#esq-img {
-    width: 90%;
-    margin: 15px;
-    border: 1px solid;
-    height: 240px;
-}
-
-.fotos-nat {
-    width: 100%;
-    height: 100%;
-}
-
-#esq-txt {
-    width: 90%;
-    font-family: satoshi;
-}
-
-#central-nat {
-    width: 36%;
-    border: 1px solid;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: whitesmoke;
-
-}
-
-#cen-img {
-    width: 90%;
-    margin: 15px;
-    border: 1px solid;
-    height: 300px;
-}
-
-#cen-txt {
-    width: 90%;
-    font-family: satoshi;
-}
-
-#direita-nat {
-    width: 26%;
-    border: 1px solid;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: whitesmoke;
-
-}
-
-#dir-img {
-    width: 90%;
-    margin: 15px;
-    border: 1px solid;
-    height: 250px;
-}
-
-#dir-txt {
-    width: 90%;
-    font-family: satoshi;
+    height: 75vh;
+    margin: 0 2% 0 2%;
+    border-radius: 5px;
 }
 
 .aviso {
@@ -507,9 +447,7 @@ footer {
     margin-top: 3%;
     color: whitesmoke;
     background: black;
-    display: flex;
     justify-content: space-around;
-    align-items: center;
     font-family: franchise;
     padding-bottom: 3%;
 }
@@ -527,10 +465,8 @@ footer {
 }
 
 #rodapeOne {
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     font-family: franchise;
 }
 
@@ -553,7 +489,7 @@ a {
 }
 
 a:visited {
-    color: white;
+    color: inherit;
 }
 
 #rodapeTWO {
