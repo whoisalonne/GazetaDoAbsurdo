@@ -55,7 +55,7 @@ header {
 
 header,
 #headerLis,
-#popular,
+#destaques,
 #site,
 #div-planos,
 .botao-planos,
@@ -64,13 +64,13 @@ header,
 #conteinerTHREE,
 footer,
 #rodapeOne,
-#conter, #CTWOCARDS, #CTWOANUNCIO, .teste, .subDivs {
+#conter, #CTWOCARDS, #CTWOANUNCIO, .teste, .subDivs, #aviso, #avisado {
     display: flex;
     align-items: center;
 }
 
 #spanGA {
-    background-color: #785bec;
+    background-color: #886afd;
     font-family: franchise;
     font-size: 4.875vw;
     padding: 0 0.8vw 0 0.8vw;
@@ -122,16 +122,30 @@ footer,
 
 #subtitulo {
     animation: move linear 12s infinite;
-    font: 2.5vw neue bold;
+    font: 2.2vw neue bold;
     margin-bottom: 4%;
 }
 
-#conter {
+#conter, #aviso {
     width: 80%;
-    height: auto;
+    height: 25vh;
+    flex-direction: column;
+    padding: 3vw;
+    border: 0.25vw solid;
+    border-radius: 0.5vw;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: roboto;
+    background: #ad9afa;
 }
 
-#popular {
+#conter h2 {
+    font-family: satoshi;
+    font-size: 2vw;
+    
+}
+
+#destaques, #avisado {
     justify-content: center;
 }
 
@@ -157,18 +171,15 @@ footer,
     justify-content: center;
 }
 
-.inforight {
-    margin-right: 1.5vw;
-    margin-left: 0.5vw;
-    font-family: roboto;
-}
-
 #info-t {
-    font-size: 3vw;
+    font-size: 4vw;
+    margin-top: -1vw;
 }
 
 #info-txt {
     font-family: satoshi;
+    font-size: 1.5vw;
+    margin-top: -2vw;
 }
 
 .autor {
@@ -179,7 +190,7 @@ footer,
 }
 
 .color {
-    background: #6746E9
+    background:  #886afd;
 }
 
 .borda {
@@ -293,10 +304,9 @@ footer,
 .divs {
     background: whitesmoke;
     width: 28vw;
-    border: 1px solid;
     margin: 1.5vw;
     border-radius: 0.5vw;
-    border: 0.2vw solid;
+    border: 0.25vw solid;
     height: 66vh;
     transition: 0.3s ease;
 }
@@ -384,7 +394,7 @@ footer,
 }
 
 #CTWOCARDS {
-    height: 145vh;
+    height: 147vh;
     width: 65vw;
     background: rgb(221, 216, 245);
     justify-content: space-around;
@@ -406,7 +416,7 @@ footer,
     border: none;
 }
 
-.teste h1, #conteinerTHREE, .aviso {
+.teste h1, #conteinerTHREE {
     margin: 0 2% 0 2%;
 }
 
@@ -426,11 +436,6 @@ footer,
     justify-content: space-around;
     height: 75vh;
     border-radius: 0.5vw;
-}
-
-.aviso {
-    font: bold 1.3vw satoshi;
-    text-align: center;
 }
 
 footer {
@@ -453,6 +458,23 @@ footer {
 .cor {
     color: #987eff
 }
+
+#aviso {
+    font-family: satoshi;
+    background: rgb(230, 88, 88)
+}
+
+#aviso p {
+    font-size: 1.5vw;
+    margin-top: -1vw;
+}
+
+#aviso-t {
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+
 
 #rodapeOne {
     flex-direction: column;
