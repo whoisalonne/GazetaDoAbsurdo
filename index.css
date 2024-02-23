@@ -291,7 +291,7 @@ footer,
 #t-tec,
 #t-cien,
 #t-nat,
-#t-soc, #t-esp {
+#t-soc, #t-esp, #t-mus {
     text-align: center;
     font-size: 4vw;
     font-family: roboto;
@@ -395,8 +395,18 @@ footer,
     transition: 0.3s ease;
 }
 
-.divs:hover, #grandeBox:hover, .pequenoCard:hover {
+.divs:hover, #grandeBox:hover, .pequenoCard:hover, .divsCurtas:hover{
     transform: scale(1.04);
+}
+
+.divsCurtas {
+    background: whitesmoke;
+    width: 20vw;
+    margin: 1.5vw;
+    border-radius: 0.5vw;
+    border: 0.25vw solid;
+    height: 66vh;
+    transition: 0.3s ease;
 }
 
 .txt-tec,
@@ -419,6 +429,15 @@ footer,
     justify-content: flex-end;
     height: 40vh;
     border-bottom: 0.2vw solid;
+}
+
+.imgcol {
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
 }
 
 #backimg01 {
@@ -471,6 +490,22 @@ footer,
 
 #backimg13 {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/skate.jpeg');
+}
+
+#backimg14 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/dj.jpg');
+}
+
+#backimg15 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/musico.jpeg');
+}
+
+#backimg16 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/paletas.jpg');
+}
+
+#backimg17 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/banda.jpg');
 }
 
 .titulo, .tituloMenor {
