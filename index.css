@@ -62,7 +62,6 @@ header,
 .conteinerTRIPLO,
 #conteinerTWO,
 footer,
-#rodapeOne,
 #conter,
 #CTWOCARDS,
 #CTWOANUNCIO,
@@ -72,7 +71,7 @@ footer,
 #avisado,
 #conteinerFOUR,
 #pequenaBox,
-.pequenoCard, #conteinerSIX{
+.pequenoCard, #conteinerSIX, #conteinerDoFooter {
     display: flex;
     align-items: center;
 }
@@ -202,7 +201,7 @@ footer,
     transition: 0.3s ease;
 }
 
-.divs:hover, #grandeBox:hover, .pequenoCard:hover, .divsCurtas:hover{
+.divs:hover, #grandeBox:hover, .pequenoCard:hover, .divsCurtas:hover, .rodapeOne li:hover{
     transform: scale(1.04);
 }
 
@@ -551,11 +550,10 @@ footer,
 
 footer {
     margin-top: 3%;
-    color: whitesmoke;
-    background: black;
-    justify-content: space-around;
-    font-family: franchise;
-    padding-bottom: 3%;
+    background:#101010;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3% 1%;
 }
 
 #t-head {
@@ -570,24 +568,36 @@ footer {
     color: #987eff
 }
 
-#rodapeOne {
-    flex-direction: column;
-    justify-content: center;
-    font-family: franchise;
+.rodapeOne {
+    font-family: satoshi;
+    color: rgb(228, 228, 228);
+    padding-right: 3vw;
 }
 
-#rodapeTWO ul {
-    margin-top: 50%;
-    list-style: none;
+#trodape {
+    margin-left: 3.4vw;
+    font-size: 1.6vw;
 }
 
-.li-fim {
-    margin-bottom: 1vw;
-    font-size: 1.4vw;
+#trodape2 {
+    margin-top: 4.4vw;
+    margin-left: 3.2vw;
+    font-size: 1.6vw;
 }
 
-.li-fim:hover {
-    color: #8468f3;
+.rodapeOne ul {
+    list-style-type: none;
+}
+
+.rodapeOne li {
+    margin-bottom: 3%;
+    transition: 0.2s ease;
+    cursor: pointer;
+    color: gray;
+}
+
+.rodapeOne li:hover {
+    color: whitesmoke;
 }
 
 .color {
@@ -611,7 +621,10 @@ a:visited {
 }
 
 #rodapeTWO {
-    font: 2vw roboto;
+    font: 1vw satoshi;
+    color: gray;
+    padding: 2%;
+    align-self: center;
 }
 
 @keyframes move {
@@ -623,6 +636,11 @@ a:visited {
         transform: translateX(-100%);
     }
 }
+
+::selection {
+    color: black;
+    background: yellow;
+  }
 
 ::-webkit-scrollbar {
     width: 0.5vw;
