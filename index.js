@@ -8,14 +8,14 @@ let anoA = document.getElementById('anoA');
 let mesA = document.getElementById('mesA');
 let diaA = document.getElementById('diaA');
 const sub = document.getElementById('subtitulo');
-const ArraySubs = ['- O contéudo deste site não é verídico e não deve ser levado a sério de forma alguma -', '- Gazeta do Povo? Nunca ouvi falar -', '- Comentários em breve (^◡^ ) -', 'Versão mobile ainda não disponivel'];
+const ArraySubs = ['- O contéudo deste site não é verídico e não deve ser levado a sério de forma alguma -', '- Gazeta do Povo? Nunca ouvi falar -', '- Atualização das páginas em breve (^◡^ ) -', ' - Versão mobile ainda não disponivel - '];
 let contador = 0;
 
 setInterval(() => {
     sub.innerText = ArraySubs[contador];
     contador++;
     if (contador === 4) { contador = 0 };
-}, 10000)
+}, 12000)
 
 anoA.innerText = ano;
 diaA.innerText = dia;
