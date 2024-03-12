@@ -4,13 +4,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perguntas Frequentes - Gazeta do Absurdo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title> Perguntas Frequentes - Gazeta do Absurdo </title>
+    <meta name="author" content="Janderson Lima">
+    <meta name='keyword' content="projeto, jornal, fictício, humor, faculdade, notícias">
+    <meta name='description'
+        content="O seu portal para notícias fictícias, onde o inusitado
+     é rotina e o absurdo é a norma. Explore conosco um mundo de humor, criatividade e histórias que desafiam a lógica.">
+    <style>
+        @font-face {
+            font-family: neue;
+            src: url(../fontes/NeueMontreal.ttf);
+        }
+
+        @font-face {
+            font-family: satoshi;
+            src: url(../fontes/Satoshi-Regular.otf);
+        }
+
+        body {
+            margin: 7vw;
+        }
+
+        p {
+            font-size: 1.3vw;
+        }
+
+        details {
+            margin-bottom: 1.5vw;
+            border-top: 0.4vw solid;
+            border-bottom: 0.4vw solid;
+            padding: 1vw;
+            background-color: #f8f8f8;
+            font-family: satoshi;
+        }
+
+        summary {
+            font-size: 1.5vw;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: neue;
+            padding: 0.8vw;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+            list-style-type: none;
+        }
+
+        summary:hover {
+            background-color: #ccc;
+        }
+
+        summary::before {
+            content: '\002B';
+            /* Unicode para o + */
+            padding-right: 1vw;
+        }
+
+        #subtitulo {
+            margin: -6vw 0 4vw 0;
+            color: gray;
+            font-family: neue;
+        }
+
+        #faq {
+            margin-top: -2vw;
+            font-size: 9vw;
+            font-family: neue;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        footer {
+            margin-top: 7vw;
+            text-align: center;
+            font-family: neue;
+        }
+
+        #voltar {
+            font-family: neue;
+            color: gray;
+            transition: 0.3s ease;
+        }
+
+        #voltar:hover {
+            color: black;
+        }
+
+        #voltar::before {
+            content: '\2190';
+            /* Unicode para uma seta apontada para a esquerda */
+            padding-right: 1vw;
+        }
+
+        ::selection {
+            color: black;
+            background: yellow;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0.5vw;
+            background: #f9fcfcbd;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #6746E9;
+            border-radius: 1.25vw;
+        }
+    </style>
 </head>
 
 <body>
-    <p> Ainda que página permaneça em desenvolvimento, gostaria apenas de dizer que todo o contéudo deste site não é
-        verídico e não deve ser levado a sério de forma alguma. Todas as máterias aqui presentes são produzidas apenas
-        com o intuito de entretenimento.</p>
+    <h1 id="faq">FAQs</h1>
+    <p id='subtitulo'> Perguntas Frequentes </p>
+
+    <details>
+        <summary>Como posso contribuir com artigos ou sugestões de pauta?</summary>
+        <p>Atualmente, devido a alguns entraves técnicos, a opção de contribuir diretamente com artigos ou sugestões de
+            pauta ainda não está disponível. Estamos trabalhando ativamente para resolver esses problemas e implementar
+            um sistema eficiente de colaboração.
+
+            No entanto, para futuros contribuidores, planejamos lançar planos exclusivos de assinatura que incluirão a
+            oportunidade de se tornar um colaborador ativo do nosso site jornalístico. Esses planos estão em fase de
+            desenvolvimento, e a conclusão está em andamento. Fique atento às atualizações em nossa página principal
+            para obter as últimas informações sobre o lançamento desses planos.</p>
+    </details>
+
+    <details>
+        <summary>Como posso relatar erros ou imprecisões em uma notícia ou no site?</summary>
+        <p>Valorizamos a precisão e integridade em nosso trabalho. Se você encontrar algum erro ou imprecisão em nossas
+            notícias, por favor, informe-nos imediatamente através da opção<a href='https://wa.me/5575998748542'> 'Fale
+                Conosco'</a> no rodapé da página principal.
+            </p>
+    </details>
+
+    <details>
+        <summary>Existe alguma restrição de idade para acessar o conteúdo do site jornalístico?</summary>
+        <p>Não, nosso site é acessível para todas as idades. Todo o conteúdo é cuidadosamente revisado para garantir que
+            seja apropriado para um público amplo. Comprometemo-nos a fornecer informações relevantes e interessantes
+            sem restrições de idade.
+        </p>
+    </details>
+
+    <details>
+        <summary> Posso republicar ou citar conteúdo do site jornalístico em outros veículos de comunicação?</summary>
+        <p>Sim. No entanto, pedimos que, ao republicar ou citar
+            nosso conteúdo, seja devidamente atribuído ao nosso site jornalístico. Inclua o link para a matéria original
+            e, se possível, mencione a fonte. Lembre-se que este é um projeto voltado ao entretenimento popular e que
+            grande parte das máterias não possuem fundamentos reais ou relevantes.
+        </p>
+    </details>
+
+    <details>
+        <summary> Há planos de lançar um aplicativo móvel para acessar o conteúdo do site de forma mais conveniente?
+        </summary>
+        <p> Estamos considerando o desenvolvimento de um aplicativo móvel para proporcionar uma experiência mais
+            conveniente aos nossos leitores. Fique atento para futuros anúncios e atualizações sobre o lançamento do
+            aplicativo.
+        </p>
+    </details>
+
+    <details>
+        <summary> Quais são os critérios para seleção de notícias e como a equipe editorial verifica a veracidade das
+            informações?</summary>
+        <p>Nossos critérios de seleção de notícias incluem falta de relevância, desimpacto e desinteresse público.
+            Quanto à veracidade,
+            nossa equipe editorial <b>NÂO</b> realiza verificações rigorosas, utilizando fontes (in)confiáveis em suas
+            propostas jornalistícas. Se você tiver dúvidas sobre alguma notícia específica, entre em contato conosco
+            para
+            mais esclarecimentos.
+        </p>
+    </details>
+    <p id="voltar"><a href='https://whoisalonne.github.io/GazetaDoAbsurdo/'>Página Principal</a></p>
+    <footer>
+        <p>&copy; Gazeta do Absurdo. Todos os direitos reservados 2024.</p>
+    </footer>
+
 </body>
 
 </html>
