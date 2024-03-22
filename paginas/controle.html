@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>DEMÔNIO DO CONTROLE | Usuário Anônimo Levanta Suspeitas sobre Omissão de Dados Públicos</title>
+    <meta name="author" content="Janderson Lima">
+    <meta name='keyword' content="projeto, jornal, fictício, humor, faculdade, notícias">
+    <meta name='description' content=" O seu portal para notícias fictícias, onde o inusitado é rotina e o absurdo é a norma. Explore
+        conosco um mundo de humor, criatividade e histórias que desafiam a lógica.">
+    <style>
+        @font-face {
+            font-family: roboto;
+            src: url('../fontes/NeueMontreal.ttf');
+        }
+
+        @font-face {
+            font-family: franchise;
+            src: url('../fontes/Franchise-Free-Bold.otf');
+        }
+
+        @font-face {
+            font-family: monogatari;
+            src: url('../fontes/Morganite-Bold.ttf');
+        }
+
+        @font-face {
+            font-family: satoshi;
+            src: url('../fontes/Satoshi-Regular.otf');
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            transition: 0.5s ease;
+        }
+
+        p,
+        li {
+            font-size: 1.3vw;
+        }
+
+        h2 {
+            font-size: 2.4vw;
+        }
+
+        #margem {
+            margin: 1vw 6vw 1vw 6vw;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-evenly;
+            border: 0.2vw solid;
+            position: sticky;
+            top: 3vh;
+            background: white;
+            z-index: 5;
+            width: 100%;
+            border-radius: 50px;
+            align-self: center;
+            align-items: center;
+        }
+
+        #spanGA {
+            font: 4.875vw franchise;
+            background: #886afd;
+            border: 0.2vw solid;
+            padding: 0.5vw 1vw 0.5vw 1vw;
+            border-radius: 10px;
+        }
+
+        #headerLis {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+        }
+
+        #headerLis:hover :not(:hover) {
+            color: gray;
+        }
+
+        #headerLis li {
+            margin-right: 1.5vw;
+            font-family: roboto;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        #headerLis li:hover {
+            transform: scale(1.08);
+        }
+
+        a:visited,
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        #titulo {
+            font: 18vw monogatari;
+            text-align: center;
+            margin-top: -16vw;
+        }
+
+        #subtitulo {
+            font-family: satoshi;
+            text-align: center;
+            margin-top: -22vw;
+            border-top: 0.25vw solid black;
+        }
+
+        #seletorDeCores {
+            margin-top: 2.5vw;
+        }
+
+        #cores {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .cor {
+            display: inline-block;
+            width: 3vw;
+            height: 6vh;
+            border: 0.2vw solid black;
+            cursor: pointer;
+            margin-right: 1vw;
+        }
+
+        #poster {
+            margin-top: 5vw;
+            width: 85.5vw;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 0.2vw solid;
+        }
+
+        #conteinerPoster {
+            width: 85vw;
+            height: 33vw;
+            border: 0.25vw solid;
+        }
+
+        #complementos {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #data,
+        #autor,
+        #numeracao {
+            font-family: roboto;
+            color: gray;
+        }
+
+        #fonte,
+        #data,
+        #autor,
+        #numeracao {
+            margin: 0.5vw 0 0.5vw 0;
+            font-size: 1vw;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #imgDoTexto {
+            width: 35vw;
+            height: 60vh;
+        }
+
+        #materia {
+            margin-top: 3vw;
+            border: 1px solid;
+            display: flex;
+            flex-direction: column;
+        }
+
+        article {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 0 2vw 0 2vw;
+            font-family: satoshi;
+        }
+
+        .destacado {
+            color: #6746E9;
+        }
+
+        #ilustrado {
+            width: 35vw;
+            height: 58vh;
+            margin-top: 1.5vw;
+        }
+
+        .paragrafo {
+            width: 40vw;
+            font-family: satoshi;
+            font-weight: 800;
+            margin-right: 2vw;
+        }
+
+        #segundaLinha {
+            display: flex;
+            margin: 4vw 0 0 4vw;
+        }
+
+        #voltar {
+            font-family: roboto;
+            color: gray;
+            transition: 0.3s ease;
+        }
+
+        #voltar:hover {
+            color: black;
+        }
+
+        #voltar::before {
+            content: '\2190';
+            /* Unicode para uma seta apontada para a esquerda */
+            padding-right: 1vw;
+        }
+
+        footer {
+            margin-top: 3%;
+            background: #101010;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 3% 1%;
+        }
+
+        #conteinerDoFooter {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        #t-head {
+            font-size: 5vw;
+        }
+
+        .fim {
+            font: 1, 2vw roboto;
+        }
+
+        .rodapeOne {
+            font-family: satoshi;
+            color: rgb(228, 228, 228);
+            padding-right: 3vw;
+        }
+
+        .tituloDoUl {
+            font-size: 1.6vw;
+            color: white;
+            cursor: auto;
+        }
+
+        .rodapeOne ul {
+            list-style-type: none;
+        }
+
+        .rodapeOne li {
+            margin-bottom: 3%;
+            transition: 0.2s ease;
+            cursor: pointer;
+            color: gray;
+        }
+
+        .rodapeOne li:hover {
+            color: whitesmoke;
+        }
+
+        #rodapeTWO {
+            font: 1.3vw satoshi;
+            color: gray;
+            padding: 2%;
+            align-self: center;
+            text-align: center;
+        }
+
+        ::selection {
+            color: black;
+            background: yellow;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0.5vw;
+            background: #f9fcfcbd;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #6746E9;
+            border-radius: 1.25vw;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="margem">
+        <header>
+            <div>
+                <p><a href='#' id="spanGA">GA</a></p>
+            </div>
+            <nav>
+                <ul id="headerLis">
+                    <li>Tecnologia</li>
+                    <li>Social</li>
+                    <li>Natureza</li>
+                    <li>Administração</li>
+                    <li>Esportes</li>
+                    <li>Música</li>
+                </ul>
+            </nav>
+        </header>
+        <section id="seletorDeCores">
+            <div id="cores">
+                <div class="cor" style="background-color: red;" onclick="mudarCor('#FFD3DC')"></div>
+                <div class="cor" style="background-color: yellow;" onclick="mudarCor('#FFF8DC')"></div>
+                <div class="cor" style="background-color: blue;" onclick="mudarCor('#CCE6FF')"></div>
+            </div>
+        </section>
+        <main>
+            <section id="principal">
+                <div id="titulo">
+                    <h1>DEMÔNIO DO CONTROLE</h1>
+                </div>
+                <div id="subtitulo">
+                    <h2>Usuário Anônimo Levanta Suspeitas sobre Omissão de Dados Públicos</h2>
+                </div>
+            </section>
+            <section id="poster">
+                <div id="complementos">
+                    <div id="data">07 de Dezembro | 2023</div>
+                    <div id="numeracao">000005A</div>
+                    <div id="autor">Janderson L.C</div>
+                </div>
+                <div id="conteinerPoster">
+                    <img src="../fotos/chainsaman (poster).png">
+                </div>
+                <div id="fonte">
+                    <i>Fonte: Fujimoto, Tatsuki. "Chainsaw Man". Capítulo 1, "Devil Hunter". Weekly Shonen Jump,
+                        Shueisha, 4
+                        de dezembro de 2018.</i>
+                </div>
+            </section>
+            <section id="materia">
+                <article>
+                    <div>
+                        <p class="paragrafo">
+                            Um usuário anônimo do Instagram está causando alvoroço ao expor <span class='destacado'>
+                                uma teoria perturbadora
+                                sobre a
+                                possível omissão de dados públicos
+                            </span> relacionados à pandemia. Sob o título intrigante "Demônio do
+                            Controle", a postagem, ilustrada com uma imagem de Makima, personagem do mangá Chainsaw Man,
+                            próxima do expectador enquanto é adornada por um fundo escuro, traz à
+                            tona uma perspectiva sombria sobre as estatísticas de mortes por COVID-19.
+                        </p>
+                        <p class="paragrafo">
+                            Na imagem, uma citação fictícia de uma suposta conversa entre autoridades municipais é
+                            apresentada de forma satírica. "Prefeituras de cidades do interior são tipo: 'eh... mortes
+                            por
+                            covid? não... eh... Esse aqui está consciente. Amarre-o e jogue com os outros. Eles não
+                            podem
+                            descobrir que não estamos repassando os obituários'", revela uma visão cínica e preocupante
+                            sobre a transparência das informações relacionadas à pandemia.
+                        </p>
+                    </div>
+                    <div id="ilustrado">
+                        <img src="../fotos/meme.jpeg" id="imgDoTexto">
+                        <div id="fonte">
+                            <i>Fonte: imagem fornecida por Alonne (@copiadosgatos) - Instagram</i>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div id="segundaLinha">
+                        <p class="paragrafo">
+                            A imagem ainda apresenta um gráfico que chama atenção: um declínio abrupto nas mortes por
+                            COVID-19
+                            em determinado dia, <span class='destacado'>sugerindo uma possível manipulação ou omissão de
+                                dados</span>s. A mensagem
+                            subliminar do
+                            meme, aliada à crescente desconfiança em relação às autoridades, gerou um debate acalorado
+                            nas
+                            redes
+                            sociais sobre a veracidade das informações fornecidas pelas instâncias governamentais.
+                        </p>
+
+                        <p class="paragrafo">
+                            Diante da repercussão, <span class='destacado'>algumas prefeituras mencionadas na postagem
+                                já se pronunciaram negando
+                                qualquer tipo de manipulação ou omissão de dados </span>. No entanto, o episódio
+                            ressalta a necessidade de uma
+                            comunicação transparente e eficaz por parte das instituições governamentais, especialmente
+                            em
+                            tempos
+                            de crise sanitária.
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <p id="voltar"><a href='https://whoisalonne.github.io/GazetaDoAbsurdo/'>Página Principal</a></p>
+        </main>
+    </section>
+    <footer>
+        <div id="conteinerDoFooter">
+            <div class="rodapeOne">
+                <ul>
+                    <li>
+                        <h1 class="tituloDoUl">INSTITUCIONAL</h1>
+                    </li>
+                    <li class="scaleLi">Sobre a Gazeta do Absurdo</li>
+                    <li class="scaleLi">Política de Privacidade</li>
+                    <li class="scaleLi"><a href='https://wa.me/5575998748542' target='_blank'>Fale Conosco</a></li>
+                    <li class="scaleLi"><a href="paginas/faq.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="rodapeOne">
+                <ul>
+                    <li>
+                        <h1 class="tituloDoUl">MATÉRIAS</h1>
+                    </li>
+                    <li class="scaleLi">Tecnologia</li>
+                    <li class="scaleLi">Administração</li>
+                    <li class="scaleLi">Natureza</li>
+                    <li class="scaleLi">Social</li>
+                    <li class="scaleLi">Esportes</li>
+                    <li class="scaleLi">Música</li>
+                </ul>
+            </div>
+            <div class="rodapeOne">
+                <ul>
+                    <li>
+                        <h1 class="tituloDoUl">COLABORADORES</h1>
+                    </li>
+                    <li class="scaleLi"><a href='https://ilovethisprogram.vercel.app'>Janderson Lima</a></li>
+                </ul>
+            </div>
+            <div class="rodapeOne">
+                <ul>
+                    <li>
+                        <h1 class="tituloDoUl">VERSÃO</h1>
+                    </li>
+                    <li>2.86</li>
+                </ul>
+            </div>
+        </div>
+        <div id="rodapeTWO">
+            <p>&copy; Gazeta do Absurdo. Todos os direitos reservados 2024.</p>
+        </div>
+    </footer>
+    <script>
+        const corpo = document.body;
+
+        function mudarCor(cor) {
+            corpo.style.backgroundColor = cor;
+        }
+    </script>
+
+</body>
+
+</html>
