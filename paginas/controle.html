@@ -31,6 +31,10 @@
             src: url('../fontes/Satoshi-Regular.otf');
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             display: flex;
             flex-direction: column;
@@ -64,6 +68,7 @@
             border-radius: 50px;
             align-self: center;
             align-items: center;
+            transition: 0.5s ease;
         }
 
         #spanGA {
@@ -138,13 +143,13 @@
             width: 85.5vw;
             display: flex;
             flex-direction: column;
-            border-bottom: 0.2vw solid;
         }
 
         #conteinerPoster {
             width: 85vw;
             height: 33vw;
             border: 0.25vw solid;
+            align-self: center;
         }
 
         #complementos {
@@ -157,14 +162,21 @@
         #numeracao {
             font-family: roboto;
             color: gray;
+            margin-bottom: -10vw;
+            font-size: 1vw;
         }
 
-        #fonte,
-        #data,
-        #autor,
-        #numeracao {
-            margin: 0.5vw 0 0.5vw 0;
+        #fonte {
             font-size: 1vw;
+            margin-top: 0.2vw;
+            padding-bottom: 0.3vw;
+            border-bottom: 0.15vw solid;
+        }
+
+        .coluna {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         img {
@@ -179,17 +191,10 @@
 
         #materia {
             margin-top: 3vw;
-            border: 1px solid;
+            border: 0.1vw solid;
             display: flex;
-            flex-direction: column;
-        }
-
-        article {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            padding: 0 2vw 0 2vw;
-            font-family: satoshi;
+            justify-content: space-evenly;
+            padding-bottom: 2vw;
         }
 
         .destacado {
@@ -199,25 +204,25 @@
         #ilustrado {
             width: 35vw;
             height: 58vh;
-            margin-top: 1.5vw;
         }
 
         .paragrafo {
-            width: 40vw;
+            width: 38vw;
             font-family: satoshi;
             font-weight: 800;
-            margin-right: 2vw;
+            margin-top: 2vw;
         }
 
-        #segundaLinha {
-            display: flex;
-            margin: 4vw 0 0 4vw;
+        #modoLeitura {
+            background: yellow;
+            margin-top: 2vw;
         }
 
         #voltar {
             font-family: roboto;
             color: gray;
             transition: 0.3s ease;
+            display: inline-block;
         }
 
         #voltar:hover {
@@ -304,7 +309,7 @@
 
 <body>
     <section id="margem">
-        <header>
+        <header id="header">
             <div>
                 <p><a href='#' id="spanGA">GA</a></p>
             </div>
@@ -341,29 +346,39 @@
                     <div id="numeracao">000005A</div>
                     <div id="autor">Janderson L.C</div>
                 </div>
-                <div id="conteinerPoster">
-                    <img src="../fotos/chainsaman (poster).png">
-                </div>
-                <div id="fonte">
-                    <i>Fonte: Fujimoto, Tatsuki. "Chainsaw Man". Capítulo 1, "Devil Hunter". Weekly Shonen Jump,
-                        Shueisha, 4
-                        de dezembro de 2018.</i>
-                </div>
+                <figure id="conteinerPoster">
+                    <img src="../fotos/chainsaman (poster).png" alt="Capa ilustrativa do capítulo 1 do mangá Chainsaw Man">
+                    <figcaption id="fonte"> <i>Fonte: Fujimoto, Tatsuki. "Chainsaw Man". Capítulo 1, "Devil Hunter".
+                            Weekly Shonen Jump,
+                            Shueisha, 4
+                            de dezembro de 2018.</i></figcaption>
+                </figure>
             </section>
+            <div id="modoLeitura">
+                <p><b>*Por favor, leia este artigo em forma de COLUNA. Comece lendo todo o conteúdo da coluna ESQUERDA
+                        antes de prosseguir para a coluna DIREITA.</b></p>
+                </b>
+            </div>
             <section id="materia">
-                <article>
-                    <div>
-                        <p class="paragrafo">
+                <div class="coluna">
+                    <article class="paragrafo">
+                        <p>
                             Um usuário anônimo do Instagram está causando alvoroço ao expor <span class='destacado'>
-                                uma teoria perturbadora
-                                sobre a
-                                possível omissão de dados públicos
+                                uma teoria perturbadora sobre a possível omissão de dados públicos
                             </span> relacionados à pandemia. Sob o título intrigante "Demônio do
                             Controle", a postagem, ilustrada com uma imagem de Makima, personagem do mangá Chainsaw Man,
                             próxima do expectador enquanto é adornada por um fundo escuro, traz à
                             tona uma perspectiva sombria sobre as estatísticas de mortes por COVID-19.
                         </p>
-                        <p class="paragrafo">
+                    </article>
+                    <figure id="ilustrado">
+                        <img src="../fotos/meme.jpeg" id="imgDoTexto" alt="Imagem representativa da teoria de omissão de dados">
+                        <figcaption id="fonte">
+                            <i>Fonte: imagem fornecida por Alonne (@copiadosgatos) - Instagram</i>
+                        </figcaption>
+                    </figure>
+                    <article class="paragrafo">
+                        <p>
                             Na imagem, uma citação fictícia de uma suposta conversa entre autoridades municipais é
                             apresentada de forma satírica. "Prefeituras de cidades do interior são tipo: 'eh... mortes
                             por
@@ -372,17 +387,12 @@
                             descobrir que não estamos repassando os obituários'", revela uma visão cínica e preocupante
                             sobre a transparência das informações relacionadas à pandemia.
                         </p>
-                    </div>
-                    <div id="ilustrado">
-                        <img src="../fotos/meme.jpeg" id="imgDoTexto">
-                        <div id="fonte">
-                            <i>Fonte: imagem fornecida por Alonne (@copiadosgatos) - Instagram</i>
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <div id="segundaLinha">
-                        <p class="paragrafo">
+                    </article>
+
+                </div>
+                <div class="coluna">
+                    <article class="paragrafo">
+                        <p>
                             A imagem ainda apresenta um gráfico que chama atenção: um declínio abrupto nas mortes por
                             COVID-19
                             em determinado dia, <span class='destacado'>sugerindo uma possível manipulação ou omissão de
@@ -393,9 +403,11 @@
                             redes
                             sociais sobre a veracidade das informações fornecidas pelas instâncias governamentais.
                         </p>
-
-                        <p class="paragrafo">
-                            Diante da repercussão, nada foi confirmado, contudo,  <span class='destacado'> algumas prefeituras mencionadas na postagem
+                    </article>
+                    <article class="paragrafo">
+                        <p>
+                            Diante da repercussão, nada foi confirmado, contudo, <span class='destacado'> algumas
+                                prefeituras mencionadas na postagem
                                 já se pronunciaram negando
                                 qualquer tipo de manipulação ou omissão de dados</span>. No entanto, o episódio
                             ressalta a necessidade de uma
@@ -404,8 +416,9 @@
                             tempos
                             de crise sanitária.
                         </p>
-                    </div>
-                </article>
+                    </article>
+                </div>
+
             </section>
             <p id="voltar"><a href='https://whoisalonne.github.io/GazetaDoAbsurdo/'>Página Principal</a></p>
         </main>
@@ -459,12 +472,34 @@
     </footer>
     <script>
         const corpo = document.body;
+        const leitura = document.getElementById('modoLeitura');
+        const cabecalho = document.getElementById('header');
+        let temporizadorEsconder;
+
 
         function mudarCor(cor) {
             corpo.style.backgroundColor = cor;
         }
-    </script>
 
+        setInterval(() => {
+            leitura.style.display = 'none';
+        }, 20000);
+
+        // Função para esconder o cabeçalho após um período de inatividade
+        function esconderCabecalho() {
+            cabecalho.style.top = '-80vw'; 
+        }
+
+        // Evento de rolagem da página
+        window.addEventListener('scroll', () => {
+            cabecalho.style.top = '1vh'; // Mostra o cabeçalho
+            clearTimeout(temporizadorEsconder); // Limpa o temporizador anterior
+            temporizadorEsconder = setTimeout(esconderCabecalho, 7000); // Define um novo temporizador para esconder o cabeçalho
+        });
+
+        // Inicialmente, esconde o cabeçalho após um período de inatividade
+        temporizadorEsconder = setTimeout(esconderCabecalho, 7000);
+    </script>
 </body>
 
 </html>
