@@ -1,21 +1,16 @@
 @font-face {
-    font-family: franchise;
-    src: url('../fontes/Franchise-Free-Bold.otf');
-}
-
-@font-face {
     font-family: roboto;
     src: url('../fontes/NeueMontreal.ttf');
 }
 
 @font-face {
-    font-family: neue;
-    src: url('../fontes/NeueMontreal-Regular.otf');
+    font-family: franchise;
+    src: url('../fontes/Franchise-Free-Bold.otf');
 }
 
 @font-face {
-    font-family: nexa;
-    src: url('../fontes/Nexa-Heavy.ttf');
+    font-family: monogatari;
+    src: url('../fontes/Morganite-Bold.ttf');
 }
 
 @font-face {
@@ -23,145 +18,284 @@
     src: url('../fontes/Satoshi-Regular.otf');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
-    background: #f9fcfcbd;
+    transition: 0.5s ease;
+}
+
+p,
+li {
+    font-size: 1.3vw;
+}
+
+h2 {
+    font-size: 2.4vw;
+}
+
+#margem {
+    margin: 1vw 6vw 1vw 6vw;
 }
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    border: 0.2vw solid;
+    position: sticky;
+    top: 3vh;
+    background: white;
+    z-index: 5;
+    width: 85%;
+    border-radius: 50px;
+    align-self: center;
     align-items: center;
-    border-bottom: 1px solid;
-    padding: 10px;
+    transition: 0.5s ease;
+    margin-top: 2vw;
 }
 
-.t-head {
-    font-size: 70px;
-    font-family: franchise;
+#spanGA {
+    font: 4.875vw franchise;
+    background: #886afd;
+    border: 0.2vw solid;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    border-radius: 10px;
 }
 
-.color {
-    background: #6746E9
-}
-
-main {
+#headerLis {
+    list-style-type: none;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin-top: 4%;
-    flex-wrap: wrap;
 }
 
-#img {
-    border: 1px solid;
-    width: 40%;
-    height: 300px;
+#headerLis:hover :not(:hover) {
+    color: gray;
 }
 
-#imgG {
-    border: 1px solid;
-    width: 40%;
-    height: 400px;
-}
-
-#principalG {width: 100%;
-    height: 400px;
-    display: block;}
-
-#principal {
-    width: 100%;
-    height: 300px;
-    display: block;
-}
-
-#principal-tec {
-    width: 100%;
-    height: 300px;
-    display: block;    
-}
-.img {margin-right: 2%;}
-
-.txt {
-    font-family: satoshi;
-   
-    width: 52%;
-    margin-bottom: 2%;
-}
-
-#menor {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.t-txt {
-    font-size: 25px;
+#headerLis li {
+    margin-right: 1.5vw;
     font-family: roboto;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
-#txt2 {margin: 0 3% 0 3%;}
-
-#imgxp {
-    margin-left: 20px;
-    padding-right: 0;
-    width: 100%;
+#headerLis li:hover {
+    transform: scale(1.08);
 }
 
-#img-foto {
-    width: 100%;
-    height: 95%;
-    border: 1px solid;
+a:visited,
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-.bordabaixa {
-    border-bottom: #7e60f8;
+#titulo {
+    font: 18vw monogatari;
+    text-align: center;
+    margin-top: -19vw;
+    text-transform: uppercase
+}
+
+#subtitulo {
+    font-family: satoshi;
+    text-align: center;
+    margin-top: -22vw;
+    border-top: 0.25vw solid black;
+}
+
+#subtitulo::first-letter {
+    text-transform: uppercase;
+}
+
+#seletorDeCores {
+    margin-top: 2.5vw;
+}
+
+#cores {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .cor {
-    color: #7453f5
+    display: inline-block;
+    width: 3vw;
+    height: 6vh;
+    border: 0.2vw solid black;
+    cursor: pointer;
+    margin-right: 1vw;
 }
 
-.roxo {
-    background: #a18bfd;
-}
-
-.voltar {
-    font-family: satoshi;
-}
-
-.fim {
-    font-family: roboto;
-}
-
-.autor {
-    color: #666974;
-    font-family: satoshi;
-}
-
-.under {text-decoration: underline}
-
-.img-tec {
-    border: 1px solid;
-    height: 300px;
-}
-footer {
-    margin-top: 3%;
-    color: whitesmoke;
-    background: black;
+#poster {
+    margin-top: 5vw;
+    width: 85.5vw;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+}
+
+#conteinerPoster {
+    width: 80vw;
+    height: 35vw;
+    border: 0.25vw solid;
+    align-self: center;
+}
+
+#complementos {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    align-self: center;
+    margin-bottom: -1.5vh;
+}
+
+#data,
+#autor,
+#numeracao {
+    font-family: roboto;
+    color: gray;
+    font-size: 1vw;
+}
+
+#fonte {
+    font-size: 1vw;
+    margin-top: 0.2vw;
+    padding-bottom: 0.3vw;
+    border-bottom: 0.15vw solid;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#imgDoTexto {
+    width: 35vw;
+    height: 60vh;
+}
+
+#materia {
+    margin-top: 3vw;
+    border: 0.1vw solid;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2vw;
+}
+
+.destacado {
+    color: #6746E9;
+}
+
+#ilustrado {
+    width: 35vw;
+    height: 58vh;
+}
+
+.paragrafo {
+    width: 38vw;
+    font-family: satoshi;
+    font-weight: 800;
+    margin-top: 2vw;
+}
+
+#modoLeitura {
+    background: yellow;
+    margin-top: 2vw;
+}
+
+#voltar {
+    font-family: roboto;
+    color: gray;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+#voltar:hover {
+    color: black;
+}
+
+#voltar::before {
+    content: '\2190';
+    /* Unicode para uma seta apontada para a esquerda */
+    padding-right: 1vw;
+}
+
+footer {
+    margin-top: 3%;
+    background: #101010;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3% 1%;
+}
+
+#conteinerDoFooter {
+    display: flex;
+    align-items: flex-start;
+}
+
+#t-head {
+    font-size: 5vw;
+}
+
+.fim {
+    font: 1, 2vw roboto;
+}
+
+.rodapeOne {
+    font-family: satoshi;
+    color: rgb(228, 228, 228);
+    padding-right: 3vw;
+}
+
+.tituloDoUl {
+    font-size: 1.6vw;
+    color: white;
+    cursor: auto;
+}
+
+.rodapeOne ul {
+    list-style-type: none;
+}
+
+.rodapeOne li {
+    margin-bottom: 3%;
+    transition: 0.2s ease;
+    cursor: pointer;
+    color: gray;
+}
+
+.rodapeOne li:hover {
+    color: whitesmoke;
+}
+
+#rodapeTWO {
+    font: 1.3vw satoshi;
+    color: gray;
+    align-self: center;
+    text-align: center;
+}
+
+::selection {
+    color: black;
+    background: yellow;
+}
+
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 0.5vw;
     background: #f9fcfcbd;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #6746E9;
-    border-radius: 12px;
+    border-radius: 1.25vw;
 }

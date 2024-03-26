@@ -5,325 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <title>DEMÔNIO DO CONTROLE | Usuário Anônimo Levanta Suspeitas sobre Omissão de Dados Públicos</title>
+    <title>Demônio do Controle | Usuário anônimo levanta suspeitas sobre omissão de dados públicos</title>
     <meta name="author" content="Janderson Lima">
     <meta name='keyword' content="projeto, jornal, fictício, humor, faculdade, notícias">
     <meta name='description' content=" O seu portal para notícias fictícias, onde o inusitado é rotina e o absurdo é a norma. Explore
         conosco um mundo de humor, criatividade e histórias que desafiam a lógica.">
-    <style>
-        @font-face {
-            font-family: roboto;
-            src: url('../fontes/NeueMontreal.ttf');
-        }
-
-        @font-face {
-            font-family: franchise;
-            src: url('../fontes/Franchise-Free-Bold.otf');
-        }
-
-        @font-face {
-            font-family: monogatari;
-            src: url('../fontes/Morganite-Bold.ttf');
-        }
-
-        @font-face {
-            font-family: satoshi;
-            src: url('../fontes/Satoshi-Regular.otf');
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            margin: 0;
-            padding: 0;
-            transition: 0.5s ease;
-        }
-
-        p,
-        li {
-            font-size: 1.3vw;
-        }
-
-        h2 {
-            font-size: 2.4vw;
-        }
-
-        #margem {
-            margin: 1vw 6vw 1vw 6vw;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-evenly;
-            border: 0.2vw solid;
-            position: sticky;
-            top: 3vh;
-            background: white;
-            z-index: 5;
-            width: 100%;
-            border-radius: 50px;
-            align-self: center;
-            align-items: center;
-            transition: 0.5s ease;
-        }
-
-        #spanGA {
-            font: 4.875vw franchise;
-            background: #886afd;
-            border: 0.2vw solid;
-            padding: 0.5vw 1vw 0.5vw 1vw;
-            border-radius: 10px;
-        }
-
-        #headerLis {
-            list-style-type: none;
-            display: flex;
-            align-items: center;
-        }
-
-        #headerLis:hover :not(:hover) {
-            color: gray;
-        }
-
-        #headerLis li {
-            margin-right: 1.5vw;
-            font-family: roboto;
-            cursor: pointer;
-            transition: 0.3s ease;
-        }
-
-        #headerLis li:hover {
-            transform: scale(1.08);
-        }
-
-        a:visited,
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        #titulo {
-            font: 18vw monogatari;
-            text-align: center;
-            margin-top: -16vw;
-        }
-
-        #subtitulo {
-            font-family: satoshi;
-            text-align: center;
-            margin-top: -22vw;
-            border-top: 0.25vw solid black;
-        }
-
-        #seletorDeCores {
-            margin-top: 2.5vw;
-        }
-
-        #cores {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        .cor {
-            display: inline-block;
-            width: 3vw;
-            height: 6vh;
-            border: 0.2vw solid black;
-            cursor: pointer;
-            margin-right: 1vw;
-        }
-
-        #poster {
-            margin-top: 5vw;
-            width: 85.5vw;
-            display: flex;
-            flex-direction: column;
-        }
-
-        #conteinerPoster {
-            width: 85vw;
-            height: 33vw;
-            border: 0.25vw solid;
-            align-self: center;
-        }
-
-        #complementos {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #data,
-        #autor,
-        #numeracao {
-            font-family: roboto;
-            color: gray;
-            margin-bottom: -10vw;
-            font-size: 1vw;
-        }
-
-        #fonte {
-            font-size: 1vw;
-            margin-top: 0.2vw;
-            padding-bottom: 0.3vw;
-            border-bottom: 0.15vw solid;
-        }
-
-        .coluna {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-
-        #imgDoTexto {
-            width: 35vw;
-            height: 60vh;
-        }
-
-        #materia {
-            margin-top: 3vw;
-            border: 0.1vw solid;
-            display: flex;
-            justify-content: space-evenly;
-            padding-bottom: 2vw;
-        }
-
-        .destacado {
-            color: #6746E9;
-        }
-
-        #ilustrado {
-            width: 35vw;
-            height: 58vh;
-        }
-
-        .paragrafo {
-            width: 38vw;
-            font-family: satoshi;
-            font-weight: 800;
-            margin-top: 2vw;
-        }
-
-        #modoLeitura {
-            background: yellow;
-            margin-top: 2vw;
-        }
-
-        #voltar {
-            font-family: roboto;
-            color: gray;
-            transition: 0.3s ease;
-            display: inline-block;
-        }
-
-        #voltar:hover {
-            color: black;
-        }
-
-        #voltar::before {
-            content: '\2190';
-            /* Unicode para uma seta apontada para a esquerda */
-            padding-right: 1vw;
-        }
-
-        footer {
-            margin-top: 3%;
-            background: #101010;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 3% 1%;
-        }
-
-        #conteinerDoFooter {
-            display: flex;
-            align-items: flex-start;
-        }
-
-        #t-head {
-            font-size: 5vw;
-        }
-
-        .fim {
-            font: 1, 2vw roboto;
-        }
-
-        .rodapeOne {
-            font-family: satoshi;
-            color: rgb(228, 228, 228);
-            padding-right: 3vw;
-        }
-
-        .tituloDoUl {
-            font-size: 1.6vw;
-            color: white;
-            cursor: auto;
-        }
-
-        .rodapeOne ul {
-            list-style-type: none;
-        }
-
-        .rodapeOne li {
-            margin-bottom: 3%;
-            transition: 0.2s ease;
-            cursor: pointer;
-            color: gray;
-        }
-
-        .rodapeOne li:hover {
-            color: whitesmoke;
-        }
-
-        #rodapeTWO {
-            font: 1.3vw satoshi;
-            color: gray;
-            align-self: center;
-            text-align: center;
-        }
-
-        ::selection {
-            color: black;
-            background: yellow;
-        }
-
-        ::-webkit-scrollbar {
-            width: 0.5vw;
-            background: #f9fcfcbd;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #6746E9;
-            border-radius: 1.25vw;
-        }
-    </style>
+    <link rel="stylesheet" href="paginas.css">
 </head>
 
 <body>
+    <header id="header">
+        <div>
+            <p><a href='#' id="spanGA">GA</a></p>
+        </div>
+        <nav>
+            <ul id="headerLis">
+                <li>Tecnologia</li>
+                <li>Social</li>
+                <li>Natureza</li>
+                <li>Administração</li>
+                <li>Esportes</li>
+                <li>Música</li>
+            </ul>
+        </nav>
+    </header>
     <section id="margem">
-        <header id="header">
-            <div>
-                <p><a href='#' id="spanGA">GA</a></p>
-            </div>
-            <nav>
-                <ul id="headerLis">
-                    <li>Tecnologia</li>
-                    <li>Social</li>
-                    <li>Natureza</li>
-                    <li>Administração</li>
-                    <li>Esportes</li>
-                    <li>Música</li>
-                </ul>
-            </nav>
-        </header>
         <section id="seletorDeCores">
             <div id="cores">
                 <div class="cor" style="background-color: red;" onclick="mudarCor('#FFD3DC')"></div>
@@ -334,20 +40,21 @@
         <main>
             <section id="principal">
                 <div id="titulo">
-                    <h1>DEMÔNIO DO CONTROLE</h1>
+                    <h1>demônio do controle</h1>
                 </div>
                 <div id="subtitulo">
-                    <h2>Usuário Anônimo Levanta Suspeitas sobre Omissão de Dados Públicos</h2>
+                    <h2>usuário anônimo levanta suspeitas sobre omissão de dados públicos</h2>
                 </div>
             </section>
             <section id="poster">
                 <div id="complementos">
-                    <div id="data">07 de Dezembro | 2023</div>
+                    <div id="data">08 de Dezembro | 2023</div>
                     <div id="numeracao">000005A</div>
                     <div id="autor">Janderson L.C</div>
                 </div>
                 <figure id="conteinerPoster">
-                    <img src="../fotos/chainsaman (poster).png" alt="Capa ilustrativa do capítulo 1 do mangá Chainsaw Man">
+                    <img src="../fotos/posters/chainsaman-_poster_.avif"
+                        alt="Capa ilustrativa do capítulo 1 do mangá Chainsaw Man">
                     <figcaption id="fonte"> <i>Fonte: Fujimoto, Tatsuki. "Chainsaw Man". Capítulo 1, "Devil Hunter".
                             Weekly Shonen Jump,
                             Shueisha, 4
@@ -372,7 +79,8 @@
                         </p>
                     </article>
                     <figure id="ilustrado">
-                        <img src="../fotos/meme.jpeg" id="imgDoTexto" alt="Imagem representativa da teoria de omissão de dados">
+                        <img src="../fotos/meme.avif" id="imgDoTexto"
+                            alt="Imagem representativa da teoria de omissão de dados">
                         <figcaption id="fonte">
                             <i>Fonte: imagem fornecida por Alonne (@copiadosgatos) - Instagram</i>
                         </figcaption>
@@ -462,7 +170,7 @@
                     <li>
                         <h1 class="tituloDoUl">VERSÃO</h1>
                     </li>
-                    <li>2.87C</li>
+                    <li>2.88</li>
                 </ul>
             </div>
         </div>
@@ -470,36 +178,7 @@
             <p>&copy; Gazeta do Absurdo. Todos os direitos reservados 2024.</p>
         </div>
     </footer>
-    <script>
-        const corpo = document.body;
-        const leitura = document.getElementById('modoLeitura');
-        const cabecalho = document.getElementById('header');
-        let temporizadorEsconder;
-
-
-        function mudarCor(cor) {
-            corpo.style.backgroundColor = cor;
-        }
-
-        setInterval(() => {
-            leitura.style.display = 'none';
-        }, 20000);
-
-        // Função para esconder o cabeçalho após um período de inatividade
-        function esconderCabecalho() {
-            cabecalho.style.top = '-80vw'; 
-        }
-
-        // Evento de rolagem da página
-        window.addEventListener('scroll', () => {
-            cabecalho.style.top = '1vh'; // Mostra o cabeçalho
-            clearTimeout(temporizadorEsconder); // Limpa o temporizador anterior
-            temporizadorEsconder = setTimeout(esconderCabecalho, 7000); // Define um novo temporizador para esconder o cabeçalho
-        });
-
-        // Inicialmente, esconde o cabeçalho após um período de inatividade
-        temporizadorEsconder = setTimeout(esconderCabecalho, 7000);
-    </script>
+    <script src="paginas.js"></script>
 </body>
 
 </html>

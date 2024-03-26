@@ -51,7 +51,7 @@ header {
     top: 3vh;
     background: white;
     z-index: 5;
-    width: 95%;
+    width: 85%;
     border-radius: 50px;
     align-self: center;
 }
@@ -222,71 +222,71 @@ footer,
 }
 
 #backimg01 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/header.png');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/header.avif');
 }
 
 #backimg02 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/codigo.jpg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/codigo.avif');
 }
 
 #backimg03 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/escovando.jpg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/escovando.avif');
 }
 
 #backimg04 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/HARU.jpeg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/HARU.avif');
 }
 
 #backimg05 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/copiadosgatos.jpeg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/copiadosgatos.avif');
 }
 
 #backimg06 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/dolar.jpg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/dolar.avif');
 }
 
 #backimg07 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/palhaco.jpg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/palhaco.avif');
 }
 
 #backimg08 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/celveg.jpeg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/celveg.avif');
 }
 
 #backimg09 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/cogumelo2.jpg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/cogumelo2.avif');
 }
 
 #backimg10 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/diplpoda.jpeg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/diplpoda.avif');
 }
 
 #backimg11 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/volei.jpeg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/volei.avif');
 }
 
 #backimg12 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/basket.jpeg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/basket.avif');
 }
 
 #backimg13 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/skate.jpeg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/skate.avif');
 }
 
 #backimg14 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/dj.jpg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/dj.avif');
 }
 
 #backimg15 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/musico.jpeg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/musico.avif');
 }
 
 #backimg16 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/paletas.jpg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/paletas.avif');
 }
 
 #backimg17 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/banda.jpg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/banda.avif');
 }
 
 .titulo, .tituloMenor {
@@ -376,7 +376,7 @@ footer,
 #grandeImg {
     width: 100%;
     height: 46.5vh;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/Xayah_0.jpg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/Xayah_0.avif');
 }
 
 #grandeImg, .smalltxt {
@@ -434,11 +434,11 @@ footer,
 }
 
 #simg2 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/bladerunner.jpeg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/bladerunner.avif');
 }
 
 #simg1 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/notfound.jpeg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/notfound.avif');
 }
 
 .divsCurtas {
