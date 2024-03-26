@@ -234,7 +234,7 @@ footer,
 }
 
 #backimg04 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/HARU.avif');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/haru.avif');
 }
 
 #backimg05 {
@@ -376,7 +376,7 @@ footer,
 #grandeImg {
     width: 100%;
     height: 46.5vh;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/Xayah_0.avif');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent), url('fotos/xayah_0.avif');
 }
 
 #grandeImg, .smalltxt {
