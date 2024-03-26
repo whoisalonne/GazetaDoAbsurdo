@@ -143,6 +143,8 @@ a {
     height: 35vw;
     border: 0.25vw solid;
     align-self: center;
+    object-fit: cover; /* Redimensiona a imagem para cobrir todo o espaço disponível */
+    object-position: center;
 }
 
 #complementos {
@@ -182,6 +184,7 @@ img {
 #imgDoTexto {
     width: 35vw;
     height: 60vh;
+    object-fit: contain;
 }
 
 #materia {
