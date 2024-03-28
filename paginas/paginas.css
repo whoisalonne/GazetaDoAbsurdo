@@ -187,6 +187,15 @@ img {
     object-fit: contain;
 }
 
+.imgDoTxtCover {
+    margin-top: 1vw;
+    width: 35vw;
+    height: 60vh;
+    object-fit: cover;
+    border: 0.2vw solid;
+}
+
+
 #materia {
     margin-top: 3vw;
     border: 0.1vw solid;
@@ -202,6 +211,7 @@ img {
 #ilustrado {
     width: 35vw;
     height: 58vh;
+    margin-bottom: 2.5vw;
 }
 
 .paragrafo {
