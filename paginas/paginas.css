@@ -140,7 +140,7 @@ a {
 
 #conteinerPoster {
     width: 80vw;
-    height: 35vw;
+    height: 40vw;
     border: 0.25vw solid;
     align-self: center;
     object-fit: cover; /* Redimensiona a imagem para cobrir todo o espaço disponível */
