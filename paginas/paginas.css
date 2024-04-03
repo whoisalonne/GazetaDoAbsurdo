@@ -142,15 +142,20 @@ a {
     width: 80vw;
     height: 40vw;
     border: 0.25vw solid;
+    border-radius: 20px;
     align-self: center;
     object-fit: cover; /* Redimensiona a imagem para cobrir todo o espaço disponível */
     object-position: center;
 }
 
+#conteinerPoster img {
+    border-radius: 17px;
+}
+
 #complementos {
     display: flex;
     justify-content: space-between;
-    width: 80vw;
+    width: 78vw;
     align-self: center;
     margin-bottom: -1.5vh;
 }
