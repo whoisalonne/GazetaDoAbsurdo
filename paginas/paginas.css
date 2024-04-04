@@ -279,6 +279,7 @@ footer {
     font-size: 1.6vw;
     color: white;
     cursor: auto;
+    text-transform: uppercase;
 }
 
 .rodapeOne ul {

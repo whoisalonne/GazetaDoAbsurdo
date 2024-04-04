@@ -44,6 +44,10 @@ li {
     src: url('fontes/Satoshi-Regular.otf');
 }
 
+@font-face {
+    font-display: swap;
+  }
+
 header {
     justify-content: space-evenly;
     border: 0.2vw solid;
@@ -585,6 +589,7 @@ footer {
     font-size: 1.6vw;
     color: white;
     cursor: auto;
+    text-transform: uppercase;
 }
 
 .rodapeOne ul {
